@@ -1,0 +1,413 @@
+/* Toggle style  */
+#togl {
+  display: none;
+}
+
+@media only screen and (max-width: 765px) {
+  #togl {
+    display: block;
+    cursor: pointer;
+  }
+
+  #Activity_div {
+    display: none;
+  }
+
+  #Tag_div {
+    display: none;
+  }
+
+  #btnLogout {
+    display: none;
+  }
+
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.BtnToggle {
+  padding: 8px 8px 8px 32px !important;
+  text-decoration: none !important;
+  font-size: 25px !important;
+  color: #818181 !important;
+  display: block !important;
+  transition: 0.3s !important;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Toggle Style End */
+
+body {
+  background-color: #eeeeee;
+}
+
+.h7 {
+  font-size: 0.8rem;
+}
+
+.gedf-wrapper {
+  margin-top: 0.97rem;
+}
+
+.gedf-main {
+  overflow-y: scroll;
+  max-height: 700px;
+}
+
+/**Reset Bootstrap*/
+.dropdown-toggle::after {
+  content: none;
+  display: none;
+}
+
+.PostMargin {
+  margin: 4px 0px 4px 0px !important;
+
+}
+
+.logo-image {
+  width: 85px;
+  height: 85px;
+  object-fit: cover;
+  border-radius: 100%;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+
+
+
+.cardbox {
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding: 0px !important;
+
+}
+
+.media {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.d-flex {
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.media .mr-3 {
+  margin-right: 1rem !important;
+}
+
+.media img {
+  width: 48px !important;
+  height: 48px !important;
+  padding: 2px;
+  border: 2px solid #f4f4f4;
+  border-radius: 50%;
+}
+
+.media-body {
+  -ms-flex: 1;
+  flex: 1;
+  padding: .4rem !important;
+}
+
+.media-body p {
+  font-family: 'Rokkitt', serif;
+  font-weight: 500 !important;
+  font-size: 14px;
+  color: #88898a;
+}
+
+.media-body small span {
+  font-family: 'Rokkitt', serif;
+  font-size: 12px;
+  color: #aaa;
+  margin-right: 10px;
+}
+
+
+/* ------------------------------- */
+/* Cardbox Item
+  ---------------------------------- */
+.cardbox .cardbox-item {
+  position: relative;
+  display: block;
+}
+
+.cardbox .cardbox-item img {
+  border-radius: 2%;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.fw {
+  width: 100% !important;
+  height: auto;
+}
+
+
+/* ------------------------------- */
+/* Cardbox Base
+  ---------------------------------- */
+.cardbox-base {
+  border-bottom: 2px solid #f4f4f4;
+}
+
+.cardbox-base li {
+  list-style: none;
+  margin: 0px 0px 0px -8px !important;
+  padding: 0px 0px 0px 0px !important;
+  display: inline-block;
+}
+
+.cardbox-base li a {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.cardbox-base li a i {
+  position: relative;
+  top: 4px;
+  font-size: 16px;
+  color: #8d8d8d;
+  margin-right: 15px;
+}
+
+.cardbox-base li a span {
+  font-family: 'Rokkitt', serif;
+  font-size: 14px;
+  color: #8d8d8d;
+  margin-left: 20px;
+  position: relative;
+  top: 5px;
+}
+
+.cardbox-base li a img {
+  width: 25px;
+  height: 25px;
+  margin: 0px !important;
+  border: 2px solid #fff;
+}
+
+
+/* ------------------------------- */
+/* Cardbox Comments
+  ---------------------------------- */
+.cardbox-comments {
+  padding: 10px 40px 20px 40px !important;
+  font-size: 0px;
+  text-align: center;
+  display: inline-block;
+}
+
+.cardbox-comments .comment-avatar img {
+  margin-top: 1px;
+  margin-right: 4px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+}
+
+.search {
+  position: relative;
+  right: -40px;
+  top: -40px;
+  margin-bottom: -40px;
+  border: 0px solid #f4f4f4;
+  width: 100%;
+  overflow: hidden;
+}
+
+.search input[type="text"] {
+  background-color: #fff;
+  line-height: 10px;
+  padding: 15px 60px 20px 10px;
+  border: none !important;
+  border-radius: 10px;
+  width: 350px;
+  font-family: 'Rokkitt', serif;
+  font-size: 14px;
+  color: #555252;
+  height: inherit;
+  font-weight: 700;
+
+}
+
+.search button {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  border: none !important;
+  background-color: transparent;
+  color: #bbbbbb;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.search button i {
+  font-size: 20px;
+  line-height: 30px;
+  display: block;
+}
+
+.commentInputBorder {
+  background-color: rgb(224, 216, 216) !important;
+}
+
+.commentImage {
+  border-radius: 50%;
+  margin-left: 28px;
+
+
+}
+
+.commentStyle {
+  background-color: lightgray;
+  border-radius: 10px;
+  border-color: rgb(74, 72, 72);
+  width: 350px;
+  height: 38px;
+  color: rgb(57, 55, 55);
+  margin-left: 17px;
+}
+
+.tagStyle {
+  background-color: rgb(21, 67, 166);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding-bottom: 5px;
+}
+
+
+.activeUserStyle {
+  padding: 10px;
+  display: flex;
+  border-radius: 8px;
+  background-color: white;
+
+}
+
+.innerUserStyle {
+  display: flex;
+  justify-content: center;
+}
+
+.active-chat-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 100%;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+.userText {
+  margin-top: 15px;
+}
+
+.profileText {
+  text-size-adjust: 15px;
+  padding-top: 11px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(235, 231, 231);
+}
+
+/* Profile Div style */
+
+.profileDiv {
+  padding: 28px;
+  border-radius: 8px;
+  background-color: white;
+  justify-content: center;
+  text-align: center;
+}
+
+/* loader css */
+.loader {
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid #3498db;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin 1s linear infinite;
+  /* Safari */
+  animation: spin 1s linear infinite;
+  display: none;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
